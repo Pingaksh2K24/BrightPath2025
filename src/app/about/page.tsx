@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
+const ArticlesCarousel = dynamic(() => import('../components/ArticlesCarousel'), { ssr: false });
 
 export default function About() {
   return (
@@ -93,6 +95,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <ArticlesCarousel />
     </div>
   );
 } 
