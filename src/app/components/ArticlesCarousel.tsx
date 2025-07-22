@@ -30,7 +30,7 @@ export default function ArticlesCarousel() {
     },
   ];
   const [start, setStart] = useState(0);
-  const visibleCount = 3;
+  const visibleCount = 4;
   const canGoLeft = start > 0;
   const canGoRight = start + visibleCount < articles.length;
 
