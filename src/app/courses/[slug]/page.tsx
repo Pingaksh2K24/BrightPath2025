@@ -728,8 +728,8 @@ const courseDetails: Record<string, { title: string; description: string; detail
   },
 };
 
-const CourseDetailPage = ({ params }: { params: { slug: string } }) => {
-  const { slug } = params;
+const CourseDetailPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
   const course = courseDetails[slug];
 
   if (!course) return notFound();

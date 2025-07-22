@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaUserMd, FaRobot, FaBook, FaCalculator, FaLanguage, FaLaptopCode, FaFlask, FaMobileAlt, FaPython } from "react-icons/fa";
+import { FaUserMd, FaBook, FaCalculator, FaLanguage, FaLaptopCode, FaFlask, FaPython } from "react-icons/fa";
 import { MdSchool } from "react-icons/md";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
