@@ -215,7 +215,7 @@ export default function Home() {
               <span role="img" aria-label="question">❓</span>
               <div>
                 <div className="font-bold text-lg">Doubt-Solving Sessions</div>
-                <div className="text-[#444]">Dedicated slots to clear students' doubts one-on-one or in groups.</div>
+                <div className="text-[#444]">Dedicated slots to clear students&#39; doubts one-on-one or in groups.</div>
               </div>
             </div>
             {/* 6 */}
