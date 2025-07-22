@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#FCFCFC] flex flex-col items-center px-4 py-12">
+    <div className="min-h-screen bg-[#FCFCFC] flex flex-col items-center pb-12">
       {/* Top Banner Image */}
-      <div className="w-full max-w-5xl mx-auto mb-8 rounded-2xl overflow-hidden">
-        <Image src="/header1.jpg" alt="Bright Path Banner" width={1200} height={300} className="w-full h-48 md:h-64 object-contain bg-white" priority />
+      <div className="w-full mb-8 rounded-2xl">
+        <Image src="/header1.jpg" alt="Bright Path Banner" width={1280} height={720} className="w-full h-[320px] md:h-[720px] object-cover bg-white" priority />
       </div>
       <div className="max-w-3xl w-full flex flex-col gap-8">
         {/* Who We Are */}
