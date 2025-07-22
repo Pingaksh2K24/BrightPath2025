@@ -48,8 +48,8 @@ export default function Footer() {
             {/* Column 2: Quick Links */}
             <div className="flex-1 mb-8 md:mb-0 flex flex-col justify-start items-start">
               <div className="text-xl font-bold mb-3">Quick Links</div>
-              <a href="#about" className="hover:underline mb-1">About Us</a>
-              <a href="#courses" className="hover:underline mb-1">Courses</a>
+              <a href="/about" className="hover:underline mb-1">About Us</a>
+              <a href="/courses" className="hover:underline mb-1">Courses</a>
               <a href="/contact" className="hover:underline mb-1">Contact</a>
               <a href="/privacy-policy" className="hover:underline mb-1">Privacy Policy</a>
               <a href="/terms-conditions" className="hover:underline">Terms & Conditions</a>

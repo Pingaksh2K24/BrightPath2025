@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ArticlesCarousel from "./components/ArticlesCarousel";
 import FacultyTeam from "./components/FacultyTeam";
+import ArticlesCarousel from "./components/ArticlesCarousel";
 
 export default function Home() {
   return (
