@@ -41,7 +41,7 @@ export default function TermsConditions() {
           <h2 className="font-bold mt-4 mb-1">6. Result & Performance</h2>
           <ul className="list-disc list-inside ml-4">
             <li>While we strive for student success, Bright Path does not guarantee results or ranks.</li>
-            <li>Performance depends on the student's individual effort and consistency.</li>
+            <li>Performance depends on the student&apos;s individual effort and consistency.</li>
           </ul>
           <h2 className="font-bold mt-4 mb-1">7. Code of Conduct</h2>
           <ul className="list-disc list-inside ml-4">

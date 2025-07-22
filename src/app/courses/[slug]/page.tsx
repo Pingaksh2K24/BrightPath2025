@@ -340,7 +340,7 @@ const courseDetails: Record<string, { title: string; description: string; detail
         <div>
           <div className="font-semibold flex items-center gap-2 text-lg mb-1">🧠 Concept-Oriented Learning</div>
           <ul className="list-disc pl-6 mb-2">
-            <li>Focus on "Why" & "How" of every concept, not just "What"</li>
+            <li>Focus on &quot;Why&quot; &amp; &quot;How&quot; of every concept, not just &quot;What&quot;</li>
             <li>Topic-wise doubt resolution to ensure 100% clarity</li>
           </ul>
         </div>
@@ -728,11 +728,7 @@ const courseDetails: Record<string, { title: string; description: string; detail
   },
 };
 
-interface CourseDetailPageProps {
-  params: { slug: string };
-}
-
-const CourseDetailPage = ({ params }: CourseDetailPageProps) => {
+const CourseDetailPage = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
   const course = courseDetails[slug];
 

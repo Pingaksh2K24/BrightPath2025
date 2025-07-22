@@ -8,7 +8,7 @@ export default function ComingSoonPage() {
         <FaRegClock className="text-6xl text-[#FFD600] mb-6 animate-pulse" />
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#0A2B73] mb-4 text-center">Coming Soon</h1>
         <p className="text-lg text-[#334155] mb-2 text-center max-w-md">
-          We're expanding our academic offerings to help more students achieve success! Stay tuned for these exciting new programs launching soon at Bright Path.
+          We&apos;re expanding our academic offerings to help more students achieve success! Stay tuned for these exciting new programs launching soon at Bright Path.
         </p>
       </div>
     </div>

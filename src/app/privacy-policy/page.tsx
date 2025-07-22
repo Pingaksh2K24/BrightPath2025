@@ -45,7 +45,7 @@ export default function PrivacyPolicy() {
           </ul>
           <h2 className="font-bold mt-4 mb-1">6. Cookies & Tracking</h2>
           <p>Our website may use cookies to improve your browsing experience. You can control cookies through your browser settings.</p>
-          <h2 className="font-bold mt-4 mb-1">7. Children's Privacy</h2>
+          <h2 className="font-bold mt-4 mb-1">7. Children&apos;s Privacy</h2>
           <p>We do not knowingly collect data from children under 13 without parental consent.</p>
           <h2 className="font-bold mt-4 mb-1">8. Changes to This Policy</h2>
           <p>We may update this Privacy Policy occasionally. Changes will be posted on this page with an updated date.</p>

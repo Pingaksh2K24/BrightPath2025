@@ -88,7 +88,7 @@ export default function About() {
           <span className="text-3xl">🤝</span>
           <div>
             <h2 className="text-2xl font-bold text-[#0A2B73] mb-1">Join Us</h2>
-            <p className="text-[#222] mb-1">Bright Path is not just a coaching class – it's a community of learners striving for excellence.</p>
+            <p className="text-[#222] mb-1">Bright Path is not just a coaching class – it&apos;s a community of learners striving for excellence.</p>
             <p className="text-[#444]">Be a part of our journey and take the right step toward a brighter future.</p>
           </div>
         </div>
