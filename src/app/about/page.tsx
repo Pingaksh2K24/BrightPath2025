@@ -7,7 +7,7 @@ export default function About() {
     <div className="min-h-screen bg-[#FCFCFC] flex flex-col items-center pb-12">
       {/* Top Banner Image */}
       <div className="w-full mb-8 rounded-2xl">
-        <Image src="/header1.jpg" alt="Bright Path Banner" width={1280} height={720} className="w-full h-[320px] md:h-[720px] object-cover bg-white" priority />
+        <Image src="/header1.jpg" alt="Bright Path Banner" width={1280} height={720} className="w-full h-[180px] sm:h-[240px] md:h-[320px] lg:h-[480px] xl:h-[720px] object-cover object-center bg-white" priority />
       </div>
       <div className="max-w-3xl w-full flex flex-col gap-8">
         {/* Who We Are */}

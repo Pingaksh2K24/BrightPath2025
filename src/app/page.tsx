@@ -18,9 +18,9 @@ export default function Home() {
             <p className="text-lg mb-8 max-w-xl">
               At Bright Path, we provide top-notch coaching to help you achieve your academic goals.
             </p>
-            <button className="bg-[#FFD600] text-[#0A2B73] font-semibold px-8 py-3 rounded-lg shadow hover:bg-yellow-400 transition mb-12">
-              Explore Courses
-            </button>
+            <Link href="/admission" className="bg-[#FFD600] text-[#0A2B73] font-semibold px-8 py-3 rounded-lg shadow hover:bg-yellow-400 transition mb-12 inline-block text-center">
+              Join Bright Path
+            </Link>
           </div>
           {/* Right Side: Hero Image (only on md+) */}
           <div className="hidden md:block flex-1 z-10">
@@ -51,9 +51,9 @@ export default function Home() {
               <div className="text-base">Specialized preparation for Maharashtra CET with updated syllabus and practice tests.</div>
               <Link href="/courses/mht-cet" className="mt-4 bg-white text-[#0A2B73] font-semibold px-6 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#FFD600] hover:to-[#FFB800] hover:text-[#0A2B73] transition self-start">View Details</Link>
             </div>
-            {/* Foundation (8th to 12th) */}
+            {/* Foundation (8th to 10th) */}
             <div className="bg-[#0A2B73] text-white rounded-xl p-6 flex flex-col gap-4 shadow transition-transform duration-300 hover:scale-105 cursor-pointer">
-              <div className="text-xl font-bold">Foundation (8th to 12th)</div>
+              <div className="text-xl font-bold">Foundation (8th to 10th)</div>
               <div className="text-base">Strong academic foundation for school students from 8th to 12th standard.</div>
               <Link href="/courses/foundation" className="mt-4 bg-white text-[#0A2B73] font-semibold px-6 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#FFD600] hover:to-[#FFB800] hover:text-[#0A2B73] transition self-start">View Details</Link>
             </div>

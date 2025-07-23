@@ -318,7 +318,7 @@ const courseDetails: Record<string, { title: string; description: string; detail
     ),
   },
   foundation: {
-    title: "Foundation (8th to 12th)",
+    title: "Foundation (8th to 10th)",
     description: "The Foundation Program at Bright Path Coaching Classes aims to build strong conceptual clarity, boost analytical thinking, and cultivate a competitive mindset from an early stage. It ensures academic excellence in school as well as lays a rock-solid base for future competitive exams like JEE, NEET, and MHT-CET.",
     details: [], // Will be replaced by html
     html: (

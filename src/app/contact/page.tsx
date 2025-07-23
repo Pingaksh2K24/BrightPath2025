@@ -37,6 +37,21 @@ export default function Contact() {
           <div className="font-bold mb-1">Email:</div>
           <div className="text-sm">brightpath108@gmail.com</div>
         </div>
+        <div className="w-full mt-10 bg-[#F8FAFC] p-6 rounded-xl border-t-4 border-[#FFD600] shadow flex flex-col items-center">
+          <h2 className="text-xl font-bold text-[#0A2B73] mb-4">Find Us on Map</h2>
+          <div className="w-full rounded-xl overflow-hidden shadow">
+            <iframe
+              title="Bright Path Location"
+              src="https://www.google.com/maps?q=20.88237178332908,76.33778860597334&z=16&output=embed"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );

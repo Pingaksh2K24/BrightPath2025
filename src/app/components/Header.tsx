@@ -8,6 +8,7 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/courses", label: "Courses" },
   { href: "/contact", label: "Contact" },
+  { href: "/coming-soon", label: "Login" },
 ];
 
 export default function Header() {
@@ -65,9 +66,18 @@ export default function Header() {
         aria-label="Open menu"
         onClick={() => setMenuOpen((open) => !open)}
       >
-        <span className={`block w-7 h-0.5 bg-[#0A2B73] mb-1.5 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2 bg-[#FFD600]' : ''}`}></span>
-        <span className={`block w-7 h-0.5 bg-[#0A2B73] mb-1.5 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
-        <span className={`block w-7 h-0.5 bg-[#0A2B73] transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2 bg-[#FFD600]' : ''}`}></span>
+        <span className={`block w-7 h-0.5 mb-1.5 transition-all duration-300
+          ${isHome && !menuOpen ? 'bg-[#0A2B73]' : 'bg-[#FFD600]'}
+          ${menuOpen ? 'rotate-45 translate-y-2' : ''}
+        `}></span>
+        <span className={`block w-7 h-0.5 mb-1.5 transition-all duration-300
+          ${isHome && !menuOpen ? 'bg-[#0A2B73]' : 'bg-[#FFD600]'}
+          ${menuOpen ? 'opacity-0' : ''}
+        `}></span>
+        <span className={`block w-7 h-0.5 transition-all duration-300
+          ${isHome && !menuOpen ? 'bg-[#0A2B73]' : 'bg-[#FFD600]'}
+          ${menuOpen ? '-rotate-45 -translate-y-2' : ''}
+        `}></span>
       </button>
       {/* Mobile Nav Drawer */}
       <div

@@ -24,7 +24,7 @@ const courses = [
     slug: "mht-cet",
   },
   {
-    title: "Foundation (8th to 12th)",
+    title: "Foundation (8th to 10th)",
     description: "Strong academic foundation for school students from 8th to 12th standard.",
     icon: FaBook,
     slug: "foundation",
