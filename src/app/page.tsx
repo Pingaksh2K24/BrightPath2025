@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from 'next/dynamic';
 import FacultyTeam from "./components/FacultyTeam";
 import ArticlesCarousel from "./components/ArticlesCarousel";
 
@@ -97,70 +98,70 @@ export default function Home() {
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🎓</span>
               <div>
-                <div className="font-bold text-lg">Experienced & Qualified Faculty</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Experienced & Qualified Faculty</div>
                 <div className="text-[#444]">Subject experts with strong academic backgrounds and years of teaching experience. They simplify complex concepts and mentor students towards success.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">📚</span>
               <div>
-                <div className="font-bold text-lg">Structured & Updated Curriculum</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Structured & Updated Curriculum</div>
                 <div className="text-[#444]">Syllabus designed according to latest school boards and competitive exam trends (NEET, JEE, MHT-CET etc.), ensuring complete and timely preparation.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🧠</span>
               <div>
-                <div className="font-bold text-lg">Concept-Oriented Teaching Approach</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Concept-Oriented Teaching Approach</div>
                 <div className="text-[#444]">Focus on conceptual clarity over rote learning. Helps students build a solid foundation for advanced topics and competitive exams.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🧑‍🏫</span>
               <div>
-                <div className="font-bold text-lg">Small Batch Size, Personalized Attention</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Small Batch Size, Personalized Attention</div>
                 <div className="text-[#444]">Limited number of students per batch allows faculty to track progress individually and offer one-on-one mentorship when needed.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">📊</span>
               <div>
-                <div className="font-bold text-lg">Regular Tests & Performance Monitoring</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Regular Tests & Performance Monitoring</div>
                 <div className="text-[#444]">Weekly/Monthly tests, mock exams, and detailed performance analysis help students know where they stand and improve steadily.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">❓</span>
               <div>
-                <div className="font-bold text-lg">Doubt-Solving Sessions & Mentorship</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Doubt-Solving Sessions & Mentorship</div>
                 <div className="text-[#444]">Scheduled one-on-one/group doubt-solving sessions ensure no student lags behind. Faculty also offer career guidance and moral support.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🖥️</span>
               <div>
-                <div className="font-bold text-lg">Smart Classrooms & E-Learning Tools</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Smart Classrooms & E-Learning Tools</div>
                 <div className="text-[#444]">Modern classrooms equipped with digital boards, animated content, and online practice portals enhance understanding and engagement.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🏆</span>
               <div>
-                <div className="font-bold text-lg">Proven Track Record of Results</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Proven Track Record of Results</div>
                 <div className="text-[#444]">Year after year, our students have scored top ranks in board exams and cracked tough entrance exams like NEET, JEE, MHT-CET etc.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">🏫</span>
               <div>
-                <div className="font-bold text-lg">Safe, Disciplined & Motivational Environment</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Safe, Disciplined & Motivational Environment</div>
                 <div className="text-[#444]">We maintain a positive atmosphere that encourages learning, discipline, and self-confidence. Student well-being is our top priority.</div>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-2xl">💼</span>
               <div>
-                <div className="font-bold text-lg">Career Counseling & Growth Guidance</div>
+                <div className="font-bold text-lg text-[#0A2B73]">Career Counseling & Growth Guidance</div>
                 <div className="text-[#444]">We help students and parents understand different career paths, choose the right stream, and plan long-term goals confidently.</div>
               </div>
             </div>

@@ -14,6 +14,7 @@ export default function Header() {
   const pathname = usePathname();
   const isHome = pathname === "/";
   const [activeHash, setActiveHash] = React.useState("");
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {
@@ -41,7 +42,8 @@ export default function Header() {
           <span className="text-[#FFD600]">PATH</span>
         </span>
       </div>
-      <div className={`flex gap-10 font-medium text-base ${isHome ? "text-[#0A2B73]" : "text-white"}`}>
+      {/* Desktop Nav */}
+      <div className={`gap-10 font-medium text-base hidden md:flex ${isHome ? "text-[#0A2B73]" : "text-white"}`}>
         {navLinks.map((link) => (
           <a
             key={link.href}
@@ -57,6 +59,40 @@ export default function Header() {
           </a>
         ))}
       </div>
+      {/* Hamburger Icon - Mobile/Tablet Only */}
+      <button
+        className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none z-30"
+        aria-label="Open menu"
+        onClick={() => setMenuOpen((open) => !open)}
+      >
+        <span className={`block w-7 h-0.5 bg-[#0A2B73] mb-1.5 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2 bg-[#FFD600]' : ''}`}></span>
+        <span className={`block w-7 h-0.5 bg-[#0A2B73] mb-1.5 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
+        <span className={`block w-7 h-0.5 bg-[#0A2B73] transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2 bg-[#FFD600]' : ''}`}></span>
+      </button>
+      {/* Mobile Nav Drawer */}
+      <div
+        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-20 transform transition-transform duration-300 md:hidden ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+        <div className="flex flex-col p-8 gap-6 text-[#0A2B73] font-semibold text-lg">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className={`transition-colors duration-200 ${isActive(link.href) ? 'text-[#FFD600]' : 'hover:text-[#FFD600]'}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </div>
+      {/* Overlay when menu is open */}
+      {menuOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-30 z-10 md:hidden"
+          onClick={() => setMenuOpen(false)}
+        ></div>
+      )}
     </nav>
   );
 } 

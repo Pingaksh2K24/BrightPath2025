@@ -1,6 +1,6 @@
 "use client";
 import { FaBook, FaLightbulb, FaClock, FaStar } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ArticlesCarousel() {
   const articles = [
@@ -30,7 +30,33 @@ export default function ArticlesCarousel() {
     },
   ];
   const [start, setStart] = useState(0);
-  const visibleCount = 4;
+  const [visibleCount, setVisibleCount] = useState(4);
+
+  // Responsive visibleCount
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 640) {
+        setVisibleCount(1); // mobile
+      } else if (window.innerWidth < 1024) {
+        setVisibleCount(2); // tablet
+      } else if (window.innerWidth < 1280) {
+        setVisibleCount(3); // small desktop
+      } else {
+        setVisibleCount(4); // large desktop
+      }
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Clamp start if visibleCount changes
+  useEffect(() => {
+    if (start + visibleCount > articles.length) {
+      setStart(Math.max(0, articles.length - visibleCount));
+    }
+  }, [visibleCount, articles.length]);
+
   const canGoLeft = start > 0;
   const canGoRight = start + visibleCount < articles.length;
 
@@ -43,11 +69,11 @@ export default function ArticlesCarousel() {
 
   return (
     <div>
-      <div className="flex gap-8 w-full justify-center">
+      <div className="flex gap-8 w-full justify-center flex-wrap">
         {articles.slice(start, start + visibleCount).map((art, idx) => (
           <div
             key={idx}
-            className="min-w-[260px] max-w-xs bg-[#F8FAFC] rounded-xl shadow p-6 flex flex-col items-start transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-[#2563eb] hover:bg-[#e0e7ff]"
+            className="min-w-[260px] max-w-xs w-full sm:w-[320px] bg-[#F8FAFC] rounded-xl shadow p-6 flex flex-col items-start transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-2 hover:border-[#2563eb] hover:bg-[#e0e7ff]"
           >
             {art.icon}
             <h3 className="text-xl font-bold text-[#0A2B73] mb-2">{art.title}</h3>
