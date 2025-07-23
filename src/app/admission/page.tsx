@@ -164,37 +164,37 @@ export default function AdmissionForm() {
           <h2 className="text-xl font-bold text-[#0A2B73] mb-2">Student Information</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="block font-semibold mb-1">Full Name</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Full Name</label>
               <input type="text" name="name" value={form.name} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Date of Birth</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Date of Birth</label>
               <input type="date" name="dob" value={form.dob} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Gender</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Gender</label>
               <select name="gender" value={form.gender} onChange={handleChange} className="w-full border rounded-lg px-3 py-2">
                 <option value="">Select</option>
                 {genders.map((g) => <option key={g} value={g}>{g}</option>)}
               </select>
             </div>
             <div>
-              <label className="block font-semibold mb-1">Class/Course Applied For</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Class/Course Applied For</label>
               <select name="course" value={form.course} onChange={handleChange} className="w-full border rounded-lg px-3 py-2">
                 <option value="">Select</option>
                 {courses.map((c) => <option key={c} value={c}>{c}</option>)}
               </select>
             </div>
             <div>
-              <label className="block font-semibold mb-1">Academic Year</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Academic Year</label>
               <input type="text" name="academicYear" value={form.academicYear} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" placeholder="2024-25" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">School/College</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">School/College</label>
               <input type="text" name="school" value={form.school} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Board</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Board</label>
               <select name="board" value={form.board} onChange={handleChange} className="w-full border rounded-lg px-3 py-2">
                 <option value="">Select</option>
                 {boards.map((b) => <option key={b} value={b}>{b}</option>)}
@@ -204,7 +204,7 @@ export default function AdmissionForm() {
               )}
             </div>
             <div>
-              <label className="block font-semibold mb-1">Medium of Instruction (Last Exam)</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Medium of Instruction (Last Exam)</label>
               <select name="medium" value={form.medium} onChange={handleChange} className="w-full border rounded-lg px-3 py-2">
                 <option value="">Select</option>
                 {mediums.map((m) => <option key={m} value={m}>{m}</option>)}
@@ -214,11 +214,11 @@ export default function AdmissionForm() {
               )}
             </div>
             <div>
-              <label className="block font-semibold mb-1">Last Exam %</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Last Exam %</label>
               <input type="number" name="lastExamPercent" value={form.lastExamPercent} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" min={0} max={100} />
             </div>
             <div className="md:col-span-2">
-              <label className="block font-semibold mb-1">Previous Academic Performance</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Previous Academic Performance</label>
               <input type="text" name="prevPerformance" value={form.prevPerformance} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
           </div>
@@ -228,31 +228,31 @@ export default function AdmissionForm() {
           <h2 className="text-xl font-bold text-[#0A2B73] mb-2">Parent/Guardian Details</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="block font-semibold mb-1">Father&apos;s Name</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Father&apos;s Name</label>
               <input type="text" name="father" value={form.father} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Occupation</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Occupation</label>
               <input type="text" name="fatherOcc" value={form.fatherOcc} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Mother&apos;s Name</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Mother&apos;s Name</label>
               <input type="text" name="mother" value={form.mother} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Contact Number</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Contact Number</label>
               <input type="tel" name="motherContact" value={form.motherContact} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" maxLength={10} />
             </div>
             <div className="md:col-span-2">
-              <label className="block font-semibold mb-1">Address</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Address</label>
               <input type="text" name="address" value={form.address} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">City</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">City</label>
               <input type="text" name="city" value={form.city} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Pin Code</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Pin Code</label>
               <input type="text" name="pin" value={form.pin} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" maxLength={6} />
             </div>
           </div>
@@ -262,23 +262,23 @@ export default function AdmissionForm() {
           <h2 className="text-xl font-bold text-[#0A2B73] mb-2">Contact & Communication</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="block font-semibold mb-1">Course Name</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Course Name</label>
               <input type="text" name="courseName" value={form.courseName} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Batch Timing Preferred</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Batch Timing Preferred</label>
               <input type="text" name="batchTiming" value={form.batchTiming} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Email</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Email</label>
               <input type="email" name="email" value={form.email} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Mobile Number</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Mobile Number</label>
               <input type="tel" name="mobile" value={form.mobile} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" maxLength={10} />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Mode of Learning</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Mode of Learning</label>
               <select name="learningMode" value={form.learningMode} onChange={handleChange} className="w-full border rounded-lg px-3 py-2">
                 <option value="">Select</option>
                 <option value="Offline">Offline</option>
@@ -286,12 +286,12 @@ export default function AdmissionForm() {
               </select>
             </div>
             <div>
-              <label className="block font-semibold mb-1">Preferred Mode of Communication</label>
+              <label className="block font-semibold mb-1 text-[#0A2B73]">Preferred Mode of Communication</label>
               <input type="text" name="commMode" value={form.commMode} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" placeholder="SMS / Email / Call" />
             </div>
             <div className="md:col-span-2 flex items-center gap-4 mt-2">
               <input type="checkbox" name="payment" checked={form.payment} onChange={handleChange} className="mr-2" id="payment" />
-              <label htmlFor="payment" className="font-semibold">Payment Paid (at Admission)</label>
+              <label htmlFor="payment" className="font-semibold text-[#0A2B73]">Payment Paid (at Admission)</label>
             </div>
           </div>
         </div>
@@ -309,7 +309,7 @@ export default function AdmissionForm() {
         </div>
         {/* Declaration */}
         <div className="mb-6">
-          <label className="flex items-center gap-2">
+          <label className="flex items-center gap-2 text-[#0A2B73]">
             <input type="checkbox" name="declaration" checked={form.declaration} onChange={handleChange} />
             <span className="text-[#334155]">I hereby declare that the above information is true to the best of my knowledge. I agree to follow the rules and regulations of Bright Path Coaching Classes. I understand that the fee once paid is non-refundable.</span>
           </label>
