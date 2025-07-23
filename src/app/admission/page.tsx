@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const courses = [
   "8th Foundation",
@@ -146,7 +147,7 @@ export default function AdmissionForm() {
         <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl w-full text-center">
           <h2 className="text-2xl font-bold text-[#0A2B73] mb-2">Thank you for applying!</h2>
           <p className="text-[#334155] mb-4">We have received your admission request. Our team will contact you soon.</p>
-          <a href="/" className="inline-block mt-4 px-6 py-2 bg-[#0A2B73] text-white rounded-lg font-semibold hover:bg-[#2563eb] transition">Back to Home</a>
+          <Link href="/" className="inline-block mt-4 px-6 py-2 bg-[#0A2B73] text-white rounded-lg font-semibold hover:bg-[#2563eb] transition">Back to Home</Link>
         </div>
       </div>
     );
@@ -227,7 +228,7 @@ export default function AdmissionForm() {
           <h2 className="text-xl font-bold text-[#0A2B73] mb-2">Parent/Guardian Details</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="block font-semibold mb-1">Father's Name</label>
+              <label className="block font-semibold mb-1">Father&apos;s Name</label>
               <input type="text" name="father" value={form.father} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
@@ -235,7 +236,7 @@ export default function AdmissionForm() {
               <input type="text" name="fatherOcc" value={form.fatherOcc} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
-              <label className="block font-semibold mb-1">Mother's Name</label>
+              <label className="block font-semibold mb-1">Mother&apos;s Name</label>
               <input type="text" name="mother" value={form.mother} onChange={handleChange} className="w-full border rounded-lg px-3 py-2" />
             </div>
             <div>
