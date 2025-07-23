@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const [showArrow, setShowArrow] = useState(false);
@@ -48,11 +49,11 @@ export default function Footer() {
             {/* Column 2: Quick Links */}
             <div className="flex-1 mb-8 md:mb-0 flex flex-col justify-start items-start">
               <div className="text-xl font-bold mb-3">Quick Links</div>
-              <a href="/about" className="hover:underline mb-1">About Us</a>
-              <a href="/courses" className="hover:underline mb-1">Courses</a>
-              <a href="/contact" className="hover:underline mb-1">Contact</a>
-              <a href="/privacy-policy" className="hover:underline mb-1">Privacy Policy</a>
-              <a href="/terms-conditions" className="hover:underline">Terms & Conditions</a>
+              <Link href="/about" className="hover:underline mb-1">About Us</Link>
+              <Link href="/courses" className="hover:underline mb-1">Courses</Link>
+              <Link href="/contact" className="hover:underline mb-1">Contact</Link>
+              <Link href="/privacy-policy" className="hover:underline mb-1">Privacy Policy</Link>
+              <Link href="/terms-conditions" className="hover:underline">Terms & Conditions</Link>
             </div>
             {/* Column 3: Connect With Us */}
             <div className="flex-1 flex flex-col justify-start items-start">
